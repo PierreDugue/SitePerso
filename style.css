@@ -1,0 +1,170 @@
+@import url("animate.css");
+
+@font-face {
+    font-family: lobsterFont;
+    src: url(Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: PostNo;
+    src: url(PostNoBillsJaffna-Medium.ttf);
+}
+
+@font-face {
+    font-family: overPass;
+    src: url(Overpass-Regular.ttf);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.postNo {
+    font-family: PostNo;
+}
+
+.overPass {
+    font-family: overPass;
+}
+
+.aboutMe {
+    margin: 0 0 0 1em;
+    right:50%;
+    max-width: 50%;;
+    text-align: right;
+}
+
+.ivoryColor {
+    color: #FFF8E8;
+}
+
+.default {
+    transition: background 1s linear;
+    background: linear-gradient(1500deg, #13244F, #51FBD2);
+}
+
+.aboutPage {
+    transition: background 1s linear;
+    background: linear-gradient(150deg, #EB5757, #F2994A);
+}
+
+.skillsPage {
+    transition: background 1s linear;
+    background: linear-gradient(270deg, #EB5757, #AD00B0);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    padding: 0.2em 1em;
+}
+
+#menu {
+    z-index: 8;
+    top: 1em;
+    display: block;
+    position: fixed;
+    font-family: PostNo;
+    font-size: 1.2em;
+}
+
+.col {
+    margin: 1em;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+
+.name {
+    margin: 2em 0 0 0;
+    border-top: solid 0.1em #FFF8E8;
+    font-size: 2em;
+    font-family: lobsterFont;
+}
+
+.title {
+    border: solid 0.1em #FFF8E8;
+    padding: 0.6em;
+    font-size: 2em;
+    font-family: lobsterFont;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.loader {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+    border: 2px solid #13244F;
+    -webkit-animation: myfirst 5s ease-in infinite alternate;
+    animation: myfirst 2s linear infinite normal;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes myfirst {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(720deg);
+        border-radius: 50%;
+        border: 4px solid #13244F
+    }
+    100% {
+        transform: rotate(1440deg);
+        border-radius: 0;
+        border: 4px solid #51FBD2
+    }
+}
+
+/* Standard syntax */
+
+@keyframes myfirst {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(720deg);
+        border-radius: 50%;
+        border: 4px solid #13244F
+    }
+    100% {
+        transform: rotate(1440deg);
+        border-radius: 0;
+        border: 4px solid #51FBD2
+    }
+}

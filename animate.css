@@ -1,0 +1,139 @@
+li>a {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #FFF8E8;
+}
+
+li>a:hover {
+    color: #FFF8E8;
+    text-decoration: none;
+}
+
+li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF8E8;
+    ;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+li>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* .section>.fp-tableCell li {
+    transform: translateX(-2em);
+    opacity: 0;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+}
+
+.section.active>.fp-tableCell li {
+    transform: translateX(0);
+    opacity: 1;
+    display:block;
+}
+
+.section.active>.fp-tableCell li {
+    transition-delay: .2s;
+}
+
+.section.active>.fp-tableCell li+li {
+    transition-delay: .4s;
+}
+
+.section.active>.fp-tableCell li+li+li {
+    transition-delay: .6s;
+}
+
+.section.active>.fp-tableCell li+li+li+li {
+    transition-delay: .8s;
+} */
+
+/* */
+
+.section>.fp-tableCell .fadeLeft {
+    transform: translateX(-4em);
+    opacity: 0;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+    max-width: 100%;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.section.active>.fp-tableCell .fadeLeft {
+    transition-delay: .3s;
+}
+
+
+.section.active>.fp-tableCell .fadeLeft {
+    transform: translateX(0);
+    opacity: 1;
+    max-width: 100%;
+    margin: 0 2em;
+    text-align: center;
+}
+
+.section.active>.fp-tableCell .fadeRight {
+    transition-delay: .3s;
+}
+
+.section>.fp-tableCell .fadeRight {
+    transform: translateX(4em);
+    opacity: 0;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+    max-width: 100%;
+    margin: 0 2em;
+    text-align: right;
+}
+
+.section.active>.fp-tableCell .fadeRight {
+    transform: translateX(-4em);
+    opacity: 1;
+    max-width: 100%;
+    margin: 0 2em;
+    text-align: right;
+}
+
+.section>.fp-tableCell .titlePage {
+    transform: translateX(0);
+    opacity: 1;
+    max-width: 100%;
+    text-align: right;
+}
+
+.section.active>.fp-tableCell .titlePage {
+    transform: translateX(0);
+    opacity: 1;
+    max-width: 100%;
+    text-align: right;
+}
+
+/**/
+
+.aboutPage1>.fp-tableCell .fadeLeft {
+    transform: translateX(-4em);
+    opacity: 0;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity 0.9s ease-in-out;
+}
+
+.aboutPage1.active>.fp-tableCell .fadeLeft {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.aboutPage1.active>.fp-tableCell .fadeLeft {
+    transition-delay: .3s;
+}
+
+/* SHapes */
