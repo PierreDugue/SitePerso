@@ -2,9 +2,10 @@
 <html>
 
 <head>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
 </head>
 
-<body class="default" id="particles-js">
+<body onload="draw();" class="default" id="particles-js">
     <div class="loader"></div>
     <div class="header">
         <nav class="ivoryColor" id="menu">
@@ -29,7 +30,7 @@
     </div>
     <div id="fullpage">
         <div class="section homePage1">
-
+            <canvas id="canvas" class="background1">DFDFD</canvas>
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start fadeLeft title ivoryColor">
@@ -42,7 +43,6 @@
             </div>
         </div>
         <div class="section aboutPage1">
-
             <div class="aboutMe ivoryColor overPass">
                 <h1 class="titlePage ivoryColor postNo">
                     About me
@@ -53,27 +53,89 @@
             </div>
         </div>
         <div class="section skillsPage1">
-            <div>
-                Test TEST tEST
+            <div class="mySkills">
+                <h1 class="titlePage ivoryColor postNo">
+                    My skills
+                </h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col fadeLeft ivoryColor">
+                            UI/UX
+                        </div>
+                        <div class="col fadeRight ivoryColor">
+                            Graphisme
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section bookPage1">Some section</div>
+        <div class="section bookPage1">
+            <div class="slide" data-anchor="slide1">Two 1</div>
+            <div class="slide" data-anchor="slide2">Two 2</div>
+        </div>
+        <div class="section contactPage1">
+
+            <div class="aboutMe ivoryColor overPass">
+                <h1 class="titlePage ivoryColor postNo">
+                    Me contacter
+                </h1>
+
+                <input type="text" />
+
+            </div>
+        </div>
+    </div>
     </div>
 
 
+    <div class="wrapper overPass ivoryColor">
+        <div class="contact-form-page">
+            <div class="form-head">
+                <div class="header-btn">
+                    <a class="top-btn" href="#">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <h1>N'hesitez pas à m'envoyer un message : </h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputText">Name</label>
+                    <input type="text" class="form-control" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputMessage">Message</label>
+                    <textarea class="form-control" rows="3" required="required"></textarea>
+                </div>
+                <button type="submit" class="submit-buttom">Send</button>
+            </form>
+        </div>
+        <a class="buttom-btn" href="#">
+            <i class="far fa-envelope"></i>
+        </a>
+    </div>
 
+    <a class="github-source" href="https://github.com/speeedsam/Hello---Animated-Contact-Form" target="_blank">
+        <i class="fa fa-github"></i>
+    </a>
 </body>
 
 </html>
 <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 <link rel="stylesheet" type="text/css" href="aos.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="formCss.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.js"></script>
 <script type="text/javascript" src="aos.js"></script>
 <script type="text/javascript" src="script.js"></script>

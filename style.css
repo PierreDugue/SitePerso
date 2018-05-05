@@ -1,5 +1,4 @@
 @import url("animate.css");
-
 @font-face {
     font-family: lobsterFont;
     src: url(Lobster-Regular.ttf);
@@ -39,14 +38,28 @@ canvas {
 }
 
 .aboutMe {
-    margin: 0 0 0 1em;
-    right:50%;
-    max-width: 50%;;
-    text-align: right;
+    max-width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+.mySkills {
+    padding: 1em;
+    max-width: 100%;
 }
 
 .ivoryColor {
     color: #FFF8E8;
+}
+
+.homePage1 {}
+
+.background1 {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 8em;
+    right: 1em;
 }
 
 .default {
@@ -73,13 +86,21 @@ li {
     padding: 0.2em 1em;
 }
 
-#menu {
-    z-index: 8;
-    top: 1em;
-    display: block;
-    position: fixed;
-    font-family: PostNo;
-    font-size: 1.2em;
+@media only screen and (min-width: 600px) {
+    #menu {
+        z-index: 8;
+        top: 1em;
+        display: block;
+        position: fixed;
+        font-family: PostNo;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #menu {
+        display: none;
+    }
 }
 
 .col {

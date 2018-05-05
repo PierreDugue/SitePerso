@@ -1,8 +1,6 @@
-
-
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['home', 'about', 'skills', 'book'],
+        anchors: ['home', 'about', 'skills', 'book', 'contact'],
         menu: '#menu',
         css3: true,
         // onLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
@@ -21,5 +19,22 @@ $(document).ready(function () {
 
 $(window).load(function () {
     // Animate loader off screen
-    $(".loader").fadeOut(500);;
+    $(".loader").fadeOut(200);;
 });
+
+$(document).on('click', '#moveRight', function(){
+    $.fn.fullpage.moveSlideRight();
+  });
+
+  $( document ).ready(function() {
+	$(".buttom-btn").click(function(){
+		$(".top-btn").addClass('top-btn-show');
+		$(".contact-form-page").addClass('show-profile');
+		$(this).addClass('buttom-btn-hide')
+	});
+
+	$(".top-btn").click(function(){
+		$(".buttom-btn").removeClass('buttom-btn-hide');
+		$(".contact-form-page").removeClass('show-profile');
+	});
+})
