@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['home', 'about', 'skills', 'book', 'contact'],
+        anchors: ['home', 'about', 'skills', 'book'],
         menu: '#menu',
         css3: true,
         // onLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
@@ -29,12 +29,14 @@ $(document).on('click', '#moveRight', function(){
   $( document ).ready(function() {
 	$(".buttom-btn").click(function(){
 		$(".top-btn").addClass('top-btn-show');
-		$(".contact-form-page").addClass('show-profile');
+        $(".contact-form-page").addClass('show-profile');
+        $(".header").addClass('displayNoneMobile');
 		$(this).addClass('buttom-btn-hide')
 	});
 
 	$(".top-btn").click(function(){
-		$(".buttom-btn").removeClass('buttom-btn-hide');
+        $(".buttom-btn").removeClass('buttom-btn-hide');
+        $(".header").removeClass('displayNoneMobile');
 		$(".contact-form-page").removeClass('show-profile');
 	});
 })

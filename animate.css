@@ -32,34 +32,6 @@ li>a:hover:before {
     transform: scaleX(1);
 }
 
-/* .section>.fp-tableCell li {
-    transform: translateX(-2em);
-    opacity: 0;
-    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
-}
-
-.section.active>.fp-tableCell li {
-    transform: translateX(0);
-    opacity: 1;
-    display:block;
-}
-
-.section.active>.fp-tableCell li {
-    transition-delay: .2s;
-}
-
-.section.active>.fp-tableCell li+li {
-    transition-delay: .4s;
-}
-
-.section.active>.fp-tableCell li+li+li {
-    transition-delay: .6s;
-}
-
-.section.active>.fp-tableCell li+li+li+li {
-    transition-delay: .8s;
-} */
-
 /* */
 
 .section>.fp-tableCell .fadeLeft {
@@ -93,7 +65,7 @@ li>a:hover:before {
     transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
     max-width: 100%;
     margin: 0 2em;
-    text-align: right;
+    text-align: center;
 }
 
 .section.active>.fp-tableCell .fadeRight {
@@ -101,10 +73,11 @@ li>a:hover:before {
     opacity: 1;
     max-width: 100%;
     margin: 0 2em;
-    text-align: right;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
+
+@media (min-width:600px) {
     .section>.fp-tableCell .aboutMe {
         transform: translateX(-8em);
         opacity: 0;
@@ -115,28 +88,58 @@ li>a:hover:before {
         border-bottom: solid 0.2em #FFF8E8;
         text-align: right;
     }
-    .section.active>.fp-tableCell .aboutMe {
-        transform: translateX(0);
-        opacity: 1;
-        max-width: 50%;
-        padding: 0 0 0.8em 8em;
-        margin: -12em 0 0 0;
-        text-align: right;
-        transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;        
-        border-bottom: solid 0.2em #FFF8E8;
-    }
-    .section>.fp-tableCell .titlePage {
+}
+
+@media (max-width:600px) {
+    .section>.fp-tableCell .aboutMe {
         transform: translateX(-8em);
         opacity: 0;
         transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
-    }
-    .section.active>.fp-tableCell .titlePage {
-        transform: translateX(0);
-        opacity: 1;
-        transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
-        
+        max-width: 80%;
+        margin: auto;
+        border-bottom: solid 0.2em #FFF8E8;
     }
 }
+
+.section.active>.fp-tableCell .aboutMe {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.section>.fp-tableCell .titlePage {
+    transform: translateX(-8em);
+    opacity: 0;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+}
+
+.section.active>.fp-tableCell .titlePage {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+}
+
+/**
+My Skills
+**/
+
+.section>.fp-tableCell .mySkills {
+    text-align: center;
+    transform: translateX(-8em);
+    transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
+    margin:0 0 2em 0;
+}
+
+.section>.fp-tableCell .mySkills>.titlePage {
+    margin: 0 0 1.5em 0;
+}
+
+.section.active>.fp-tableCell .mySkills {
+    transform: translateX(0);
+    opacity: 1;
+    text-align: center;
+}
+
+/* } */
 
 .section.active>.fp-tableCell .aboutMe {
     transition-delay: .3s;
