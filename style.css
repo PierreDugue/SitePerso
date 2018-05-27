@@ -94,15 +94,6 @@ canvas {
     color: #FFF8E8;
 }
 
-<<<<<<< HEAD
-=======
-@media (max-width: 600px) {
-    .displayNoneMobile {
-        display: none;
-    }
-}
-
->>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 .background1 {
     position: fixed;
     width: 150px;
@@ -144,7 +135,6 @@ li {
     font-size: 1.2em;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
     #menu {
         z-index: 8;
@@ -154,14 +144,6 @@ li {
         font-family: PostNo;
         font-size: 1.2em;
     }
-=======
-#menuMobile {
-    display: none;
-}
-
-.margin1 {
-    margin:1em;
->>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 }
 
 .col {
