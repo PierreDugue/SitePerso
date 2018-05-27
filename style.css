@@ -53,6 +53,10 @@ html {
     margin: 0;
 }
 
+.displayNone {
+    display:none;
+}
+
 canvas {
     position: absolute;
     width: 100%;
@@ -90,6 +94,15 @@ canvas {
     color: #FFF8E8;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 600px) {
+    .displayNoneMobile {
+        display: none;
+    }
+}
+
+>>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 .background1 {
     position: fixed;
     width: 150px;
@@ -122,17 +135,16 @@ li {
     padding: 0.2em 1em;
 }
 
-@media only screen and (min-width: 600px) {
-    #menu {
-        z-index: 8;
-        top: 1em;
-        display: block;
-        position: fixed;
-        font-family: PostNo;
-        font-size: 1.2em;
-    }
+#menu {
+    z-index: 8;
+    top: 1em;
+    display: block;
+    position: fixed;
+    font-family: PostNo;
+    font-size: 1.2em;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
     #menu {
         z-index: 8;
@@ -142,6 +154,14 @@ li {
         font-family: PostNo;
         font-size: 1.2em;
     }
+=======
+#menuMobile {
+    display: none;
+}
+
+.margin1 {
+    margin:1em;
+>>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 }
 
 .col {
@@ -229,4 +249,12 @@ li {
         border-radius: 0;
         border: 4px solid #51FBD2
     }
+}
+
+.circle {
+    border: solid 1px #FFF8E8;
+    border-radius: 100%;
+    max-width: 20%;
+    padding:1em;
+    margin:auto;
 }

@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+=======
+$(document).ready(function () {
+    $('#fullpage').fullpage({
+        anchors: ['home', 'about', 'skills', 'book'],
+        menu: '#menu',
+        css3: true,
+        // onLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+        //     if ($(this).attr("class").includes("homePage1")) {
+        //         $("body").css("background","linear-gradient(270deg, #EB5757, #AD00B0)").fadeIn(2000);
+        //     }
+        //     if ($(this).attr("class").includes("aboutPage1")) {
+        //         $("body").css("background","linear-gradient(150deg, #EB5757, #F2994A)").fadeIn(2000);
+        //     }
+        //     if ($(this).attr("class").includes("skillsPage1")) {
+        //         $("body").css("background","linear-gradient(150deg, #AD00B0, #F2994A)").fadeIn(2000);
+        //     }
+        // }
+    });
+});
+>>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 
 $(window).load(function () {
     // Animate loader off screen
@@ -11,12 +32,14 @@ $(document).on('click', '#moveRight', function(){
   $( document ).ready(function() {
 	$(".buttom-btn").click(function(){
 		$(".top-btn").addClass('top-btn-show');
-		$(".contact-form-page").addClass('show-profile');
+        $(".contact-form-page").addClass('show-profile');
+        $(".header").addClass('displayNoneMobile');
 		$(this).addClass('buttom-btn-hide')
 	});
 
 	$(".top-btn").click(function(){
-		$(".buttom-btn").removeClass('buttom-btn-hide');
+        $(".buttom-btn").removeClass('buttom-btn-hide');
+        $(".header").removeClass('displayNoneMobile');
 		$(".contact-form-page").removeClass('show-profile');
 	});
 })
