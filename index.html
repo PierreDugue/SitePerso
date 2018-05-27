@@ -4,138 +4,84 @@
 <head>
     <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
         crossorigin="anonymous"></script>
+
 </head>
 
-<body onload="draw();" class="default" id="particles-js">
+<body>
     <div class="loader"></div>
     <div class="header">
         <nav class="ivoryColor" id="menu">
+            <!-- <div class="row">
+                <div class="col-sm"><a href="">Home</a></div>
+                <div class="col-sm"><a href="">About</a></div>
+                <div class="col-sm"><a href="">Skills</a></div>
+                <div class="col-sm"><a href="">Book</a></div>
+                <div class="col-sm"><a href="">Contact</a></div>
+            </div> -->
             <ul>
-                <li data-menuanchor="home">
+                <li>
                     <a href="#home">Home</a>
                 </li>
-                <li data-menuanchor="about">
+                <li>
                     <a href="#about">About</a>
                 </li>
-                <li data-menuanchor="skills">
+                <li>
                     <a href="#skills">Skills</a>
                 </li>
-                <li data-menuanchor="book">
+                <li>
                     <a href="#book">Book</a>
                 </li>
-                <li data-menuanchor="contact">
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </div>
-    <div id="fullpage">
-        <div class="section homePage1">
-            <canvas id="canvas" class="background1">DFDFD</canvas>
-            <div class="container">
-                <div class="row">
-                    <div class="col align-self-start fadeLeft title ivoryColor">
-                        Developpeur web
-                    </div>
-                    <div class="col align-self-end name fadeRight ivoryColor">
-                        Pierre Dugue
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section aboutPage1">
-            <div class="aboutMe ivoryColor overPass">
-                <h1 class="titlePage ivoryColor postNo">
-                    About me
-                </h1>
-                Developpeur de formation, blah
-            </div>
-        </div>
-        <div class="section skillsPage1">
-            <div class="mySkills">
-                <h1 class="titlePage ivoryColor postNo">
-                    My skills
-                </h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col fadeLeft ivoryColor">
-                            <div class="skillTile">
-                                <h3>
-                                    UI/UX
-                                </h3>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col fadeRight ivoryColor">
-                            <h3>
-                                Graphisme
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section bookPage1">
-            <div class="slide" data-anchor="slide1">Two 1</div>
-            <div class="slide" data-anchor="slide2">Two 2</div>
-        </div>
-        <div class="section contactPage1">
 
-            <div class="aboutMe ivoryColor overPass">
-                <h1 class="titlePage ivoryColor postNo">
-                    Me contacter
-                </h1>
-
-                <input type="text" />
-
-            </div>
+    <section id="home" class="firstPage parallax-window" data-parallax="scroll" data-image-src="images/bridge.jpg">
+        <div class="content">
+            <h1>You can create full screen sections without javascript.</h1>
+            <p>The height is set to 90vh, that means 90% height.</p>
         </div>
-    </div>
-    </div>
+    </section>
 
-
-    <div class="wrapper overPass ivoryColor">
-        <div class="contact-form-page">
-            <div class="form-head">
-                <div class="header-btn">
-                    <a class="top-btn" href="#">
-                        <i class="fa fa-times"></i>
-                    </a>
-                </div>
-            </div>
-            <h1>N'hesitez pas à m'envoyer un message : </h1>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputText">Name</label>
-                    <input type="text" class="form-control" required="required">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" required="required">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputMessage">Message</label>
-                    <textarea class="form-control" rows="3" required="required"></textarea>
-                </div>
-                <button type="submit" class="submit-buttom">Send</button>
-            </form>
+    <section id="about">
+        <div class="content">
+            <h1>Resize your browser and see how they adapt.</h1>
         </div>
-        <a class="buttom-btn" href="#">
-            <i class="far fa-envelope"></i>
-        </a>
-    </div>
+    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/bridge.jpg"></div>
+    <section id="skills">
+        <div class="content">
+            <h1>It's amazing and fast.</h1>
+        </div>
+    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/bridge.jpg"></div>
+    <section id="book">
+        <div class="content">
+            <h1>See the
+                <a href="http://caniuse.com/#feat=viewport-units">browser support.</a>
+            </h1>
+        </div>
+    </section>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/bridge.jpg"></div>
+    <section id="contact">
+        <div class="content">
+            <h1>Pouet
+                <a href="http://caniuse.com/#feat=viewport-units">browser support.</a>
+            </h1>
+        </div>
+    </section>
 
-    <a class="github-source" href="https://github.com/speeedsam/Hello---Animated-Contact-Form" target="_blank">
-        <i class="fa fa-github"></i>
-    </a>
+    <footer>
+        Made by
+        <a href="https://www.twitter.com/ckor">@ckor</a>
+    </footer>
+
 </body>
 
 </html>
-<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
 <link rel="stylesheet" type="text/css" href="aos.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="formCss.css" />
@@ -145,7 +91,5 @@
     crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script type="text/javascript" src="jquery.fullPage.js"></script>
-<script type="text/javascript" src="aos.js"></script>
 <script type="text/javascript" src="script.js"></script>
+<script src="parallax/parallax.min.js"></script>
