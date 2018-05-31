@@ -32,11 +32,8 @@ li>a:hover:before {
     transform: scaleX(1);
 }
 
-<<<<<<< HEAD
-=======
 /* */
 
->>>>>>> 80906fa11d7ef8b7dc472e212cb21966bdeaa346
 .section>.fp-tableCell .fadeLeft {
     transform: translateX(-4em);
     opacity: 0;
@@ -138,7 +135,7 @@ My Skills
     text-align: center;
     transform: translateX(-8em);
     transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99), opacity .8s ease-in-out;
-    margin:0 0 2em 0;
+    margin: 0 0 2em 0;
 }
 
 .section>.fp-tableCell .mySkills>.titlePage {
@@ -189,7 +186,6 @@ My Skills
     border-radius: 50%;
     transition: 0.2s;
     text-align: center;
-
     margin: auto;
     transition: border-radius 0.3s, height 0.3s, width 0.3s 0.3s;
     cursor: pointer;
@@ -225,4 +221,18 @@ My Skills
 
 .section.active>.fp-tableCell .fade {
     opacity: 1;
+}
+
+#home {
+    animation: fadein 3s;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }

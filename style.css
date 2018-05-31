@@ -34,18 +34,17 @@ section {
     padding: 0 7%;
     margin: 0;
     max-width: none;
-    background: linear-gradient(150deg, rgb(71, 13, 13), rgb(31, 15, 1));
-    height: 100vh;
-    display : flex !important;
-    align-items : center;
+    background: linear-gradient(330deg, rgb(10, 10, 10), rgb(56, 19, 12));
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center;
 }
 
-section .centerTile {
-
-}
+section .centerTile {}
 
 .content {
-
+    margin: auto;
+    margin-top: 5%;
 }
 
 body,
@@ -54,7 +53,7 @@ html {
 }
 
 .displayNone {
-    display:none;
+    display: none;
 }
 
 canvas {
@@ -85,6 +84,10 @@ canvas {
     text-align: center;
 }
 
+.textCenter {
+    text-align: center;
+}
+
 .mySkills {
     padding: 1em;
     max-width: 100%;
@@ -92,6 +95,17 @@ canvas {
 
 .ivoryColor {
     color: #FFF8E8;
+}
+
+.svgStyle {
+    fill: #FFF8E8;
+    max-width: inherit;
+}
+
+svg path {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 3;
 }
 
 .background1 {
@@ -197,6 +211,31 @@ li {
     animation: myfirst 2s linear infinite normal;
 }
 
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+h1 {
+    color: #EEEEEE;
+}
+
+
 /* Safari 4.0 - 8.0 */
 
 @-webkit-keyframes myfirst {
@@ -237,6 +276,6 @@ li {
     border: solid 1px #FFF8E8;
     border-radius: 100%;
     max-width: 20%;
-    padding:1em;
-    margin:auto;
+    padding: 1em;
+    margin: auto;
 }
