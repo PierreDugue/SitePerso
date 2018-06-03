@@ -1,6 +1,6 @@
 $(window).load(function () {
   // Animate loader off screen
-  $(".loader").fadeOut(200);
+  $(".loader").fadeOut(1000);
 });
 
 
@@ -64,19 +64,31 @@ $(document).ready(function () {
 //   });
 // };
 
-var path = document.querySelectorAll('path'),
-  percentScroll;
-let sectionSize;
+// var path = document.querySelectorAll('path'),
+//   percentScroll;
+// let sectionSize;
 
-$(path).each(function () {
-  this.style.strokeDasharray = this.getTotalLength();
-  sectionSize = $("#skills").innerHeight();
-});
+// $(path).each(function () {
+//   this.style.strokeDasharray = this.getTotalLength();
+//   sectionSize = $("#skills").innerHeight();
+// });
 
-window.onscroll = function () {
-  percentScroll = window.pageYOffset / (document.body.offsetHeight - sectionSize);
+// window.onscroll = function () {
+//   percentScroll = window.pageYOffset / (document.body.offsetHeight - sectionSize);
 
-  $(path).each(function () {
-    this.style.strokeDashoffset = Math.floor(this.getTotalLength() * (1 - percentScroll));
-  });
-};
+//   $(path).each(function () {
+//     this.style.strokeDashoffset = Math.floor(this.getTotalLength() * (1 - percentScroll));
+//   });
+// };
+
+// var svg = document.querySelector('svg');
+
+// function isElementInViewport(el) {
+//   var rect = el.getBoundingClientRect();
+//   var isOutside = (rect.top >= window.innerHeight) || (rect.bottom <= 0);
+//   return !isOutside;
+// }
+
+// window.addEventListener('scroll', function(e) {
+//   svg.classList.toggle('in-view', isElementInViewport(svg));
+// });
