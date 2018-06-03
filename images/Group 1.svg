@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="868" height="460" viewBox="0 0 868 460">
+<svg xmlns="http://www.w3.org/2000/svg" width="675" height="410" viewBox="0 0 675 410">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -52,10 +52,7 @@
       }
     </style>
   </defs>
-  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" cx="398" cy="255" r="175"/>
-  <text id="HTML_CSS" data-name="HTML/CSS" class="cls-2" x="638.907" y="252.195">HTML/CSS</text>
-  <text id="Web_" data-name="Web " class="cls-2" transform="matrix(0.758, 0.652, -0.652, 0.758, 149.355, 12.804)">Web </text>
-  <text id="UI_UX" data-name="UI/UX" class="cls-2" x="-1.938" y="250.11">UI/UX</text>
-  <text id="Logos" class="cls-2" transform="translate(578.868 73.689) rotate(-36.78)">Logos</text>
-  <circle class="cls-3" cx="398" cy="255" r="200"/>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" cx="205" cy="205" r="175"/>
+  <text id="HTML_CSS" data-name="HTML/CSS" class="cls-2" x="446.579" y="194.696">HTML/CSS</text>
+  <circle class="cls-3" cx="205" cy="205" r="200"/>
 </svg>

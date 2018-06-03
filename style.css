@@ -44,12 +44,17 @@ section {
 section .centerTile {}
 
 .contentTitle {
+    max-width: 500px;
+    ;
+}
+
+.marginAuto {
     margin: auto;
 }
 
 .content {
     margin: auto;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 body,
@@ -204,6 +209,34 @@ li {
     background-color: black;
 }
 
+#divLoader svg {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black;
+}
+
+.cls-1 {
+    fill: none;
+}
+
+.cls-1,
+.cls-2 {
+    stroke: #fff8e8;
+    stroke-width: 15px;
+    fill-rule: evenodd;
+}
+
+.cls-2 {
+    stroke-width: 0px;
+    fill: #fff8e8;
+}
+
 h1 {
     color: #EEEEEE;
 }
@@ -253,19 +286,22 @@ h1 {
 }
 
 .darkGradient {
-    background: linear-gradient(290deg, rgba(160, 52, 2, 0.6), rgba(37, 16, 8, 0.8));
+    background: linear-gradient(290deg, rgba(160, 52, 2, 0.5), rgba(37, 16, 8, 0.5));
 }
 
-path {
-    stroke: rgba(255, 247, 229, 1);
-    fill: #FFF8E8;
-    stroke-width: 1px;
+#home path {
+    /* stroke: rgba(255, 247, 229, 1); */
     stroke-dasharray: 2750;
     animation: animate 5s linear forwards;
 }
 
-svg {
+#home svg {
     padding: 10px;
+}
+
+.loader path {
+    stroke-dasharray: 1100;
+    animation: loader 1.5s alternate infinite;
 }
 
 /* svg.in-view path {
@@ -293,6 +329,19 @@ svg {
         stroke-dashoffset: 0;
         /* fill: rgba(255, 247, 229, 1); */
         opacity: 10;
+        stroke: rgba(255, 247, 229, 1);
+    }
+}
+
+@keyframes loader {
+    0% {
+        fill: none;
+        stroke-dashoffset: 1100;
+        stroke: rgba(255, 247, 229, 1);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        /* fill: rgba(255, 247, 229, 1); */
         stroke: rgba(255, 247, 229, 1);
     }
 }
