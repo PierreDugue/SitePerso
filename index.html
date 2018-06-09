@@ -69,7 +69,7 @@
             <div data-aos="zoom-in-up" data-aos-duration="1000">
                 <h1 class="titlePage ivoryColor postNo textCenter">About me</h1>
                 <center>
-                    <object class="ivoryColor interline" data="images/interline.svg" type="image/svg+xml"></object>
+                    <object stroke-width="5px" class="ivoryColor interline" data="images/interline.svg" type="image/svg+xml"></object>
                 </center>
             </div>
 
@@ -90,7 +90,7 @@
                 </h1>
                 <div data-aos="zoom-in-up" data-aos-duration="1000">
                     <center>
-                        <object class="ivoryColor" data="images/Skills.svg" type="image/svg+xml"></object>
+                        <!-- <object class="ivoryColor" data="images/Skills.svg" type="image/svg+xml"></object> -->
                     </center>
 
                     <!-- <object id="house" class="ivoryColor svgStyle" data="images/drawing1.svg" type="image/svg+xml"></object> -->
@@ -105,32 +105,105 @@
     <div class="parallax-window darkGradient" data-parallax="scroll" data-image-src="images/bridge.jpg"></div>
     <section id="contact">
         <div class="content">
-            <div class="content">
-                <h1 class="titlePage ivoryColor postNo">Contact</h1>
+            <div data-aos="zoom-in-up" data-aos-duration="1000">
+                <h1 class="titlePage ivoryColor postNo textCenter">Contact</h1>
+            </div>
+
+            <div class="formTile container" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form name="htmlform" method="post" action="form.php">
+                            <table>
+                                </tr>
+                                <tr>
+
+                                    <td valign="top">
+                                        <input type="text" name="first_name" maxlength="50" size="30" placeholder="Nom">
+                                    </td>
+                                </tr>
+
+                                <tr>
+
+                                    <td valign="top ">
+                                        <input type="text " name="email " maxlength="80 " size="30" placeholder="E-mail">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td valign="top ">
+                                        <input type="text" name="telephone" maxlength="30" size="30" placeholder="Telephone">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top ">
+                                        <textarea name="comments " maxlength="1000 " cols="25 " rows="6 " placeholder="Message"></textarea>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2 " style="text-align:center ">
+                                        <input type="submit" value="Submit">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="col-md-6 ivoryColor">
+                        <p>
+                            Suivez moi sur les reseaux sociaux
+                        </p>
+                        <div id="reseaux">
+                            <a href="https://www.linkedin.com/in/pierre-dugu&eacute;-59287644" target="_blank">
+                                <div class="glyphes ivoryColor fab fa-linkedin"></div>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="glyphes ivoryColor fab fa-twitter-square"></i>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="glyphes ivoryColor fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/piloubegood" target="_blank">
+                                <i class="glyphe ivoryColor fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div id="coordonnee">
+                            <h4>Coordonnee</h4>
+                            <div>
+                                <a class="ivoryColor" href="">
+                                    <i class="glyphe far fa-envelope"></i>pierre.dugue1@gmail.com</a>
+                            </div>
+                            <div>
+                                <a class="ivoryColor" href="">
+                                    <i class="fas fa-phone-square glyphe"></i>06.06.06.06.06</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
+        <div class="ivoryColor">Mahogany web&mobile</div>
     </footer>
 
 </body>
 
 </html>
 
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" type="text/css" href="formCss.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="ScrollMagic.min.js"></script>
-<script src="parallax/parallax.min.js"></script>
-<script type="text/javascript" src="aos.js"></script>
-<link href="aos.css" rel="stylesheet">
+<link rel="stylesheet " type="text/css " href="css/style.css " />
+<link rel="stylesheet " type="text/css " href="css/formCss.css " />
+<link href="css/aos.css " rel="stylesheet ">
+<link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css " integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4 "
+    crossorigin="anonymous ">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+    crossorigin="anonymous "></script>
+<script type="text/javascript " src="js/script.js "></script>
+<script type="text/javascript " src="js/ScrollMagic.min.js "></script>
+<script src="parallax/parallax.min.js "></script>
+<script type="text/javascript " src="js/aos.js "></script>
 <script>
     AOS.init();
 </script>
