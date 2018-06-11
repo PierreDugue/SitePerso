@@ -11,18 +11,27 @@
     <div class="loader">
         <div id="divLoader">
             <svg xmlns="http://www.w3.org/2000/svg" width="563.906" height="709.5" viewBox="0 0 563.906 709.5">
-                <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M644.1,381.211L243.082,612.92V149.5Z" transform="translate(-235.594 -142)"
+                <!-- <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M644.1,381.211L243.082,612.92V149.5Z" transform="translate(-235.594 -142)"
                 />
                 <path id="Polygon_1_copy" data-name="Polygon 1 copy" class="cls-1" d="M390.992,612.508l401.02,231.506V381Z" transform="translate(-235.594 -142)"
-                />
+                /> -->
+
+
                 <!-- <path class="cls-2" d="M628,381h15V485H628V381Z" transform="translate(-235.594 -142)" /> -->
                 <!-- <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-2" d="M391,510h15V613H391V510Z" transform="translate(-235.594 -142)"
                 /> -->
+
+                <path class="cls-1" d="M560,502V902L844,718l65.017,81.273L968,681" transform="translate(-545 -478.594)" />
+                <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-1" d="M1129,902V502L845,686l-65.017-81.273L721,723" transform="translate(-545 -478.594)"
+                />
             </svg>
         </div>
     </div>
 
     <div class="header">
+        <button id="togglerButton" type="button">
+            <i class="fas fa-bars ivoryColor"></i>
+        </button>
         <nav class="ivoryColor" id="menu">
             <!-- <div class="row">
                 <div class="col-sm"><a href="">Home</a></div>
@@ -31,23 +40,25 @@
                 <div class="col-sm"><a href="">Book</a></div>
                 <div class="col-sm"><a href="">Contact</a></div>
             </div> -->
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#book">Book</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+            <div id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item menuItem">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-item menuItem">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-item menuItem">
+                        <a href="#skills">Mes services</a>
+                    </li>
+                    <li class="nav-item menuItem">
+                        <a href="#book">Book</a>
+                    </li>
+                    <li class="nav-item menuItem">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 
@@ -61,6 +72,7 @@
                         vector-effect="non-scaling-stroke" />
                 </g>
             </svg>
+            <!-- <object class="ivoryColor web" data="images/WEB.svg" type="image/svg+xml"></object> -->
         </div>
     </section>
 
@@ -86,20 +98,63 @@
         <div class="content">
             <div data-aos="zoom-in-up" data-aos-duration="1000">
                 <h1 class="titlePage ivoryColor postNo textCenter">
-                    My skills
+                    Mes services
                 </h1>
-                <div data-aos="zoom-in-up" data-aos-duration="1000">
-                    <center>
-                        <!-- <object class="ivoryColor" data="images/Skills.svg" type="image/svg+xml"></object> -->
-                    </center>
-
-                    <!-- <object id="house" class="ivoryColor svgStyle" data="images/drawing1.svg" type="image/svg+xml"></object> -->
+                <!-- <center>
+                    <object class="ivoryColor" data="images/Skills.svg" type="image/svg+xml"></object>
+                </center> -->
+                <!-- <object id="house" class="ivoryColor svgStyle" data="images/drawing1.svg" type="image/svg+xml"></object> -->
+            </div>
+            <dvi class="flex-container">
+                <div class="tileBox ivoryColor" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <object class="ivoryColor web" data="images/UIUXLogo.svg" type="image/svg+xml"></object>
+                    <p>
+                        Deisgner le UI/UX de vos sites et applications, pour correspondre aux attentes de vos clients.
+                    </p>
                 </div>
+                <div class="tileBox ivoryColor" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <h1>
+                        <i class="fas fa-pencil-alt ivoryColor"></i>
+                    </h1>
+                    <p>
+                        Realisation de logos et chartes graphique coherentes, representant au mieux votre marque et produits.
+                    </p>
+                </div>
+                <div class="tileBox ivoryColor" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <h1>
+                        <i class="fas fa-code"></i>
+                    </h1>
+                    <p>
+                        Realisation de sites et applications vitrines responsive via CMS, HTML5/CSS3 et Javascript.
+                    </p>
+                </div>
+                <div class="tileBox ivoryColor" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <h5>Web</h5>
+                    <p>
+                        Pouet
+                    </p>
+                </div>
+            </dvi>
+        </div>
     </section>
     <div class="parallax-window darkGradient" data-parallax="scroll" data-image-src="images/forest3.jpeg"></div>
     <section id="book">
         <div class="content">
-            <h1 class="titlePage ivoryColor postNo">My work</h1>
+            <div data-aos="zoom-in-up" data-aos-duration="1000">
+                <h1 class="titlePage textCenter ivoryColor postNo">My work</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <video class="videosTiles" width="100%" height="100%" autoplay muted loop>
+                            <source src="videos/test.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                        <object class="ivoryColor mobileDraw" data="images/mobileDraw.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="col-md-6 ivoryColor">
+                        <h2>Work 1</h2>
+                        <p>blahbla blah</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div class="parallax-window darkGradient" data-parallax="scroll" data-image-src="images/bridge.jpg"></div>
