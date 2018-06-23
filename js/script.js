@@ -22,15 +22,14 @@ $(document).ready(function () {
     $(".contact-form-page").removeClass('show-profile');
   });
 
-  if ($(document).width() < 600) {
-    $("#togglerButton").click(function () {
-      $("#menu").slideToggle(600);
-    });
+  $("#togglerButton").click(function () {
+    $("#menu").slideToggle(600);
+  });
 
-    $(".menuItem").click(function () {
-      $("#menu").slideToggle(600);
-    });
-  }
+  $(".menuItem").click(function () {
+    $("#menu").slideToggle(600);
+  });
+
 })
 
 $(document).ready(function () {
