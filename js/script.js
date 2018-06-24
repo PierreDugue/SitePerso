@@ -23,11 +23,11 @@ $(document).ready(function () {
   });
 
   $("#togglerButton").click(function () {
-    $("#menu").slideToggle(600);
+    $("#menu").slideToggle(200);
   });
 
   $(".menuItem").click(function () {
-    $("#menu").slideToggle(600);
+    $("#menu").slideToggle(200);
   });
 
 })
